@@ -1,0 +1,33 @@
+.category-page h2 {
+    text-align: center;
+    text-decoration: underline #f48024 5px;
+    font-size: 2em;
+}
+
+.category-details-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2% 10%;
+}
+
+.product-category-spec {
+    display: flex;
+    flex-direction: row;
+    margin: 2% 0;
+    min-width: 48%;
+    max-height: 200px;
+    border-radius: 10px;
+    background-color: #E7EBF0;
+    box-shadow: 0 0 0 1px rgb(53 72 91 / 4%), 0 2px 2px rgb(0 0 0 / 0%), 0 4px 4px rgb(0 0 0 / 1%), 0 10px 8px rgb(0 0 0 / 2%), 0 15px 15px rgb(0 0 0 / 2%), 0 30px 30px rgb(0 0 0 / 2%), 0 70px 65px rgb(0 0 0 / 3%);
+}
+
+.product-category-spec .category-desc {
+    width: 100%;
+}
+
+.product-category-spec img{
+    max-height: 200px;
+    align-self: flex-end;
+}

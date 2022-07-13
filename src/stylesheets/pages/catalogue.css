@@ -1,0 +1,29 @@
+.catalogue-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.catalogue-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    padding: 2%;
+    justify-content: center;
+}
+
+.beer-data-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 18%;
+    background-color: #F8F9F9;
+    margin: 2%;
+    box-shadow: 0 0 0 1px rgb(53 72 91 / 4%), 0 2px 2px rgb(0 0 0 / 0%), 0 4px 4px rgb(0 0 0 / 1%), 0 10px 8px rgb(0 0 0 / 2%), 0 15px 15px rgb(0 0 0 / 2%), 0 30px 30px rgb(0 0 0 / 2%), 0 70px 65px rgb(0 0 0 / 3%);
+    transition: transform .5s ease;
+    cursor: pointer;
+}
+
+.beer-data-item-wrapper:hover {
+    transform: scale(1.1);
+    /*box-shadow: 2px 2px 5px grey, -2px -2px 5px grey;*/
+    box-shadow: 0px 1px 9px grey, -2px -2px 5px #f8f9f9;
+}

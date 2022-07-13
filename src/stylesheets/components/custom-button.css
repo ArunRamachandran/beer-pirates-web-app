@@ -1,0 +1,15 @@
+.product-custom-btn {
+    border-radius: 20px;
+    text-align: center;
+    width: 35%;
+    padding: 7px 0px;
+    background-color: #f48024;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.product-custom-btn:hover {
+    transition: 0.5s;
+    box-shadow: 0 10px 20px -8px rgb(0 0 0 / 70%);
+}
