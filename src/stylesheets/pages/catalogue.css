@@ -7,6 +7,12 @@
     text-decoration: underline #f48024 5px;
 }
 
+.catalogue-action-panel .product-custom-btn {
+    margin: 2% 0 0 7%;
+    width: 10%;
+    font-weight: bold;
+}
+
 .catalogue-action-panel .cta-back-btn {
     margin-left: 10%;
     max-width: 10%;
@@ -48,7 +54,7 @@
 .beer-data-item-wrapper {
     display: flex;
     flex-direction: column;
-    max-width: 18%;
+    max-width: 15%;
     border-radius: 7px;
     background-color: #E7EBF0;
     margin: 2%;

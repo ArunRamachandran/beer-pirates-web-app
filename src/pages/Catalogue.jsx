@@ -2,8 +2,9 @@
 import React, { useEffect } from "react";
 import { useRef } from 'react';
 import { useNavigate } from "react-router-dom";
-import '../stylesheets/pages/catalogue.css';
 import { useLocalStorage } from "../hooks/useLocalStorage";
+import { CustomButton } from "../components/CustomButton";
+import '../stylesheets/pages/catalogue.css';
 
 export const Catalogue = () => {
 
@@ -23,7 +24,7 @@ export const Catalogue = () => {
     return (
         <div className="catalogue-container" ref={ref}>
             <div className="catalogue-action-panel">
-                <p className="cta-back-btn" onClick={handleNavigation}>back</p>
+                <CustomButton text="Back" variant="primary" callback={handleNavigation} />
                 <h2>All products from <span>{category}</span> category</h2>
             </div>
             <div className="catalogue-items">
