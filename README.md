@@ -4,6 +4,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+### Important guidelines
+
+Start the server before running the web client to enable the data flow to the application. 
+
 In the project directory, you can run:
 
 ### `npm start`
