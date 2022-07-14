@@ -2,6 +2,7 @@
     position: relative;
     width: 24px;
     height: 24px;
+    margin-top: 5%;
   }
   
   .chevron {
@@ -28,7 +29,7 @@
     top: 0;
     height: 100%;
     width: 51%;
-    background: black;
+    background: #f48024;
   }
   
   .chevron:before {
@@ -67,11 +68,12 @@
     margin-left: -30px;
     font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
     font-size: 12px;
-    color: black;
+    color: #f48024;
     text-transform: uppercase;
     white-space: nowrap;
     opacity: .25;
     animation: pulse 2s linear alternate infinite;
+    cursor: pointer;
   }
   
   @keyframes pulse {

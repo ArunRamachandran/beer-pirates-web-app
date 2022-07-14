@@ -1,3 +1,24 @@
+.catalogue-action-panel h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.catalogue-action-panel span {
+    text-decoration: underline #f48024 5px;
+}
+
+.catalogue-action-panel .cta-back-btn {
+    margin-left: 10%;
+    max-width: 10%;
+    background-color: #f48024;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+}
+
 .catalogue-container{
     display: flex;
     flex-direction: column;
@@ -11,11 +32,25 @@
     justify-content: center;
 }
 
+.item-desc {
+    padding: 0 10px;
+}
+
+.item-name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.item-price span {
+    font-weight: bold;
+}
+
 .beer-data-item-wrapper {
     display: flex;
     flex-direction: column;
     max-width: 18%;
-    background-color: #F8F9F9;
+    border-radius: 7px;
+    background-color: #E7EBF0;
     margin: 2%;
     box-shadow: 0 0 0 1px rgb(53 72 91 / 4%), 0 2px 2px rgb(0 0 0 / 0%), 0 4px 4px rgb(0 0 0 / 1%), 0 10px 8px rgb(0 0 0 / 2%), 0 15px 15px rgb(0 0 0 / 2%), 0 30px 30px rgb(0 0 0 / 2%), 0 70px 65px rgb(0 0 0 / 3%);
     transition: transform .5s ease;

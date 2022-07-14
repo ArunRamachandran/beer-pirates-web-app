@@ -26,7 +26,7 @@ export const ProductCategorySpec = ({ categoryName, categoryData }) => {
             <div className="category-desc">
                 <p className="category-name">{categoryName}</p>
                 <div>
-                    <p className="category-avg-price">{calculateAveragePrice(categoryData)}</p>
+                    <p className="category-avg-price">Avg. price: {calculateAveragePrice(categoryData)}</p>
                     <p className="category-total-count">Total craft beers: {categoryData.length}</p>
                 </div>
                 <div className="category-actions">
