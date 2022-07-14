@@ -1,6 +1,6 @@
 /* General Category page to display the beer categories */
 import React from "react";
-import {useRef} from 'react';
+import { useRef } from 'react';
 import { BeerPiratesLandingPage } from "./BeerPiratesLandingPage";
 import { useStateContext } from "../contexts/ContextProvider";
 import { ProductCategorySpec } from "../components/ProductCategorySpec";

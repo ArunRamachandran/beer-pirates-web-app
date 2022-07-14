@@ -1,24 +1,30 @@
 /* Specific Catalogue  to display each individual beer data */
-import React from "react";
-import { useStateContext } from "../contexts/ContextProvider";
+import React, { useEffect } from "react";
+import { useRef } from 'react';
 import { useNavigate } from "react-router-dom";
 import '../stylesheets/pages/catalogue.css';
+import { useLocalStorage } from "../hooks/useLocalStorage";
 
 export const Catalogue = () => {
 
+    const ref = useRef(null);
     const navigate = useNavigate();
-    const { translatedData, selectedCategory } = useStateContext();
-    const categoryData = translatedData[selectedCategory];
+    const { data, category } = useLocalStorage();
+    const categoryData = data[category];
 
     const handleNavigation = () => {
         navigate('/category');
     };
 
+    useEffect(() => {
+        ref.current?.scrollIntoView({behavior: 'smooth'});
+    }, []);
+
     return (
-        <div className="catalogue-container">
+        <div className="catalogue-container" ref={ref}>
             <div className="catalogue-action-panel">
                 <p className="cta-back-btn" onClick={handleNavigation}>back</p>
-                <h2>All products from <span>{selectedCategory}</span> category</h2>
+                <h2>All products from <span>{category}</span> category</h2>
             </div>
             <div className="catalogue-items">
                 {categoryData.map((beerData) => (
